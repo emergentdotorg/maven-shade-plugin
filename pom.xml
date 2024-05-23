@@ -30,7 +30,7 @@
   </parent>
 
   <artifactId>maven-shade-plugin</artifactId>
-  <version>3.4.1-air-9-SNAPSHOT</version>
+  <version>3.4.1-em-9-SNAPSHOT</version>
   <packaging>maven-plugin</packaging>
 
   <name>Apache Maven Shade Plugin</name>
@@ -44,9 +44,9 @@
   </prerequisites>
 
   <scm>
-    <connection>scm:git:git@github.com:urbanairship/maven-shade-plugin.git</connection>
-    <developerConnection>scm:git:git@github.com:urbanairship/maven-shade-plugin.git</developerConnection>
-    <url>https://github.com/urbanairship/maven-shade-plugin/tree/${project.scm.tag}</url>
+    <connection>scm:git:git@github.com:emergentdotorg/maven-shade-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:emergentdotorg/maven-shade-plugin.git</developerConnection>
+    <url>https://github.com/emergentdotorg/maven-shade-plugin/tree/${project.scm.tag}</url>
     <tag>HEAD</tag>
   </scm>
   <issueManagement>
@@ -59,12 +59,14 @@
   </ciManagement>
   <distributionManagement>
     <repository>
-      <id>releases</id>
-      <url>gs://airship-maven-artifacts/releases</url>
+      <id>github-emergent</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/emergentdotorg/pkgrepo</url>
     </repository>
     <snapshotRepository>
-      <id>snapshot</id>
-      <url>gs://airship-maven-artifacts/snapshots</url>
+      <id>github-emergent</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/emergentdotorg/pkgrepo</url>
     </snapshotRepository>
   </distributionManagement>
 
@@ -75,7 +77,7 @@
     <currentVersion>${project.version}</currentVersion>
     <asmVersion>9.4</asmVersion>
     <slf4j.version>1.7.32</slf4j.version>
-    <project.build.outputTimestamp>2022-10-21T20:02:58Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2022-10-21T20:02:32Z</project.build.outputTimestamp>
   </properties>
 
   <contributors>
@@ -265,13 +267,6 @@
   </dependencies>
 
   <build>
-    <extensions>
-      <extension>
-        <groupId>com.gkatzioura.maven.cloud</groupId>
-        <artifactId>google-storage-wagon</artifactId>
-        <version>1.7</version>
-      </extension>
-    </extensions>
     <pluginManagement>
       <plugins>
         <plugin>
