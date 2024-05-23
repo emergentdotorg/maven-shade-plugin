@@ -30,7 +30,7 @@
   </parent>
 
   <artifactId>maven-shade-plugin</artifactId>
-  <version>3.4.1-em-9</version>
+  <version>3.4.1-em-10-SNAPSHOT</version>
   <packaging>maven-plugin</packaging>
 
   <name>Apache Maven Shade Plugin</name>
@@ -77,7 +77,7 @@
     <currentVersion>${project.version}</currentVersion>
     <asmVersion>9.4</asmVersion>
     <slf4j.version>1.7.32</slf4j.version>
-    <project.build.outputTimestamp>2024-05-23T08:22:25Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2024-05-23T08:24:42Z</project.build.outputTimestamp>
   </properties>
 
   <contributors>
